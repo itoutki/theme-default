@@ -453,11 +453,6 @@ function init() {
         return handleNavigation(event.state.path, false);
     };
 
-    $(document).on('click', '.navigation-prev', handleLinkClick);
-    $(document).on('click', '.navigation-next', handleLinkClick);
-    $(document).on('click', '.summary [data-path] a', handleLinkClick);
-    $(document).on('click', '.page-inner a', handleLinkClick);
-
     $(window).resize(updateNavigationPosition);
 
     // Prepare current page
